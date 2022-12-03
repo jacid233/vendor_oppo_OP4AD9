@@ -6,6 +6,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/oppo/OP4AD9
 
 PRODUCT_COPY_FILES += \
+    vendor/oppo/OP4AD9/proprietary/odm/bin/hw/vendor.nxp.hardware.nfc@1.2-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.nxp.hardware.nfc@1.2-service \
     vendor/oppo/OP4AD9/proprietary/odm/etc/acdbdata/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Bluetooth_cal.acdb \
     vendor/oppo/OP4AD9/proprietary/odm/etc/acdbdata/General_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/General_cal.acdb \
     vendor/oppo/OP4AD9/proprietary/odm/etc/acdbdata/Global_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Global_cal.acdb \
@@ -22,6 +23,18 @@ PRODUCT_COPY_FILES += \
     vendor/oppo/OP4AD9/proprietary/odm/etc/camera/config/oplus_camera_aps_config:$(TARGET_COPY_OUT_ODM)/etc/camera/config/oplus_camera_aps_config \
     vendor/oppo/OP4AD9/proprietary/odm/etc/camera/config/oplus_camera_config:$(TARGET_COPY_OUT_ODM)/etc/camera/config/oplus_camera_config \
     vendor/oppo/OP4AD9/proprietary/odm/etc/camera/config/video_beauty_default_config:$(TARGET_COPY_OUT_ODM)/etc/camera/config/video_beauty_default_config \
+    vendor/oppo/OP4AD9/proprietary/odm/etc/init/init.SN100x.nfc.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.SN100x.nfc.rc \
+    vendor/oppo/OP4AD9/proprietary/odm/etc/init/vendor.nxp.hardware.nfc@1.2-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.nxp.hardware.nfc@1.2-service.rc \
+    vendor/oppo/OP4AD9/proprietary/odm/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_ODM)/etc/libnfc-nci.conf \
+    vendor/oppo/OP4AD9/proprietary/odm/etc/libnfc-nxp-pnscr.conf:$(TARGET_COPY_OUT_ODM)/etc/libnfc-nxp-pnscr.conf \
+    vendor/oppo/OP4AD9/proprietary/odm/etc/nfc/libnfc-mtp-SN100.conf_19161:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc-mtp-SN100.conf_19161 \
+    vendor/oppo/OP4AD9/proprietary/odm/etc/nfc/libnfc-nci.conf_19161:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc-nci.conf_19161 \
+    vendor/oppo/OP4AD9/proprietary/odm/etc/nfc/nfc_conf_ref:$(TARGET_COPY_OUT_ODM)/etc/nfc/nfc_conf_ref \
+    vendor/oppo/OP4AD9/proprietary/odm/etc/nfc/nfc_fw_ref:$(TARGET_COPY_OUT_ODM)/etc/nfc/nfc_fw_ref \
+    vendor/oppo/OP4AD9/proprietary/odm/etc/nfc/sn100u.bin_sn100t_fw_01_10_53:$(TARGET_COPY_OUT_ODM)/etc/nfc/sn100u.bin_sn100t_fw_01_10_53 \
+    vendor/oppo/OP4AD9/proprietary/odm/etc/nfc/sn100u.bin_sn100t_fw_01_10_57:$(TARGET_COPY_OUT_ODM)/etc/nfc/sn100u.bin_sn100t_fw_01_10_57 \
+    vendor/oppo/OP4AD9/proprietary/odm/etc/nfc/st21nfc_fw.bin_st21h:$(TARGET_COPY_OUT_ODM)/etc/nfc/st21nfc_fw.bin_st21h \
+    vendor/oppo/OP4AD9/proprietary/odm/etc/nfc/st21nfc_fw7.bin_st21h:$(TARGET_COPY_OUT_ODM)/etc/nfc/st21nfc_fw7.bin_st21h \
     vendor/oppo/OP4AD9/proprietary/odm/etc/sensor/config/kona_qrd_bmi26x_0.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kona_qrd_bmi26x_0.json \
     vendor/oppo/OP4AD9/proprietary/odm/etc/sensor/config/kona_qrd_cct.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kona_qrd_cct.json \
     vendor/oppo/OP4AD9/proprietary/odm/etc/sensor/config/kona_qrd_cct_rear.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kona_qrd_cct_rear.json \
@@ -41,6 +54,7 @@ PRODUCT_COPY_FILES += \
     vendor/oppo/OP4AD9/proprietary/odm/firmware/tp/19161/FW_S6SY771_SAMSUNG_FAE.bin:$(TARGET_COPY_OUT_ODM)/firmware/tp/19161/FW_S6SY771_SAMSUNG_FAE.bin \
     vendor/oppo/OP4AD9/proprietary/odm/firmware/tp/19161/LIMIT_S3908_BOE.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/19161/LIMIT_S3908_BOE.img \
     vendor/oppo/OP4AD9/proprietary/odm/firmware/tp/19161/LIMIT_S6SY771_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/19161/LIMIT_S6SY771_SAMSUNG.img \
+    vendor/oppo/OP4AD9/proprietary/odm/lib/libsn100u_fw.so:$(TARGET_COPY_OUT_ODM)/lib/libsn100u_fw.so \
     vendor/oppo/OP4AD9/proprietary/odm/lib/rfsa/adsp/capi_v2_dap_cpdp.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/capi_v2_dap_cpdp.so \
     vendor/oppo/OP4AD9/proprietary/odm/lib/rfsa/adsp/libVDHexagonBlurless_v2_skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libVDHexagonBlurless_v2_skel.so \
     vendor/oppo/OP4AD9/proprietary/odm/lib/rfsa/adsp/libaiboost_skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libaiboost_skel.so \
@@ -79,6 +93,9 @@ PRODUCT_COPY_FILES += \
     vendor/oppo/OP4AD9/proprietary/odm/lib64/camera/com.qti.tuned.sm8250_ofilm_imx586_19161.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.tuned.sm8250_ofilm_imx586_19161.bin \
     vendor/oppo/OP4AD9/proprietary/odm/lib64/camera/com.qti.tuned.sm8250_truly_hi846_19161.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.tuned.sm8250_truly_hi846_19161.bin \
     vendor/oppo/OP4AD9/proprietary/odm/lib64/camera/com.qti.tuned.sm8250_truly_imx471_19161.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.tuned.sm8250_truly_imx471_19161.bin \
+    vendor/oppo/OP4AD9/proprietary/odm/lib64/nfc_nci.nqx.default.hw.so:$(TARGET_COPY_OUT_ODM)/lib64/nfc_nci.nqx.default.hw.so \
+    vendor/oppo/OP4AD9/proprietary/odm/lib64/vendor.nxp.hardware.nfc@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.nxp.hardware.nfc@1.0.so \
+    vendor/oppo/OP4AD9/proprietary/odm/lib64/vendor.nxp.hardware.nfc@1.1.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.nxp.hardware.nfc@1.1.so \
     vendor/oppo/OP4AD9/proprietary/odm/vendor/firmware/alipay.b00:$(TARGET_COPY_OUT_ODM)/vendor/firmware/alipay.b00 \
     vendor/oppo/OP4AD9/proprietary/odm/vendor/firmware/alipay.b01:$(TARGET_COPY_OUT_ODM)/vendor/firmware/alipay.b01 \
     vendor/oppo/OP4AD9/proprietary/odm/vendor/firmware/alipay.b02:$(TARGET_COPY_OUT_ODM)/vendor/firmware/alipay.b02 \
@@ -214,3 +231,6 @@ PRODUCT_COPY_FILES += \
     vendor/oppo/OP4AD9/proprietary/vendor/lib64/rfsa/adsp/libsns_device_mode_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/rfsa/adsp/libsns_device_mode_skel.so \
     vendor/oppo/OP4AD9/proprietary/vendor/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so \
     vendor/oppo/OP4AD9/proprietary/vendor/lib64/vendor.qti.hardware.dsp@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.dsp@1.0.so
+
+PRODUCT_PACKAGES += \
+    manifest_nfc_sn100t
